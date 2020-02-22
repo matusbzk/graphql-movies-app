@@ -12,5 +12,8 @@ namespace MoviesApp.Models
         public bool IsAlive { get; set; }
 
         public ICollection<Acting> Movies { get; set; }
+
+        public string Name => $"{FirstName} {LastName}";
+        public int Age => DateTime.Today.Year - Birthdate.Year;
     }
 }

@@ -26,7 +26,10 @@ namespace MoviesApp
             }
 
             Movie = await _context.Movies
-                .Include(m => m.Director).FirstOrDefaultAsync(m => m.Id == id);
+                .Include(m => m.Director)
+                .Include(m => m.Actors)
+                .ThenInclude(a => a.Person)
+                .FirstOrDefaultAsync(m => m.Id == id);
 
             if (Movie == null)
             {

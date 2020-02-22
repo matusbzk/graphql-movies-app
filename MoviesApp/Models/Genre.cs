@@ -4,6 +4,9 @@
     {
         Comedy,
         Horror,
-        Drama
+        Drama,
+        Action,
+        Fantasy,
+        SciFi
     }
 }

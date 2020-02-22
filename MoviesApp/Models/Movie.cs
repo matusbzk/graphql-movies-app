@@ -16,5 +16,6 @@ namespace MoviesApp.Models
 
         public Person Director { get; set; }
         public ICollection<Acting> Actors { get; set; }
+        public string ReleaseDateFormatted => ReleaseDate.HasValue ? ReleaseDate.Value.ToString("yyyy MMMM dd") : "";
     }
 }

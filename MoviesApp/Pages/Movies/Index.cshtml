@@ -56,10 +56,10 @@
                 @Html.DisplayFor(modelItem => item.Genre)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ReleaseDate)
+                @Html.DisplayFor(modelItem => item.ReleaseDateFormatted)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Director.Id)
+                @Html.DisplayFor(modelItem => item.Director.Name)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
