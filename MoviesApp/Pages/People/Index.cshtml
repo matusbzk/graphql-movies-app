@@ -1,0 +1,16 @@
+﻿@page
+@model MoviesApp.PeopleIndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>People</h1>
+
+<div id="allPeople"></div>
+
+<script src="https://unpkg.com/apollo-client-browser@1.9.0"></script>
+<script src="~/js/people.js"></script>
+<script>
+    renderAllPeople();
+</script>

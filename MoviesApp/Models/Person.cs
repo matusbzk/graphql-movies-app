@@ -15,5 +15,6 @@ namespace MoviesApp.Models
 
         public string Name => $"{FirstName} {LastName}";
         public int Age => DateTime.Today.Year - Birthdate.Year;
+        public string BirthdateFormatted => Birthdate.ToString("yyyy MMMM dd");
     }
 }
