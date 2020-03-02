@@ -25,6 +25,8 @@ namespace MoviesApp.GraphQL.Types
                     {
                         return null;
                     }
+
+                    // return peopleRepository.GetById(context.Source.DirectorId.Value);
                     var loader = dataLoaderAccessor.Context.GetOrAddBatchLoader<Guid, Person>(
                         "GetActorsById",
                         peopleRepository.GetByIds);
